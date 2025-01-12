@@ -1,6 +1,16 @@
-import { Link } from "react-router-dom"
+import { Link, useLoaderData } from "react-router-dom"
+import { getProducts } from "../services/ProductService"
+
+export async function loader() {
+
+  const products = await getProducts()
+  return products
+}
 
 export default function Products() {
+
+  const products = useLoaderData()
+
   return (
     <>
         <div className="flex justify-between">
