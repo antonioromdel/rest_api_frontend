@@ -60,7 +60,7 @@ export default function ProductDetails({product}: ProductDetailsProps) {
                     <input 
                       type="submit"
                       value="Eliminar"
-                      className="bg-red-600 text-white rounded-lg p-2 uppercase font-bold text-xs text-center hover:cursor-pointer"
+                      className="bg-red-600 text-white rounded-lg p-2 w-full uppercase font-bold text-xs text-center hover:cursor-pointer"
                     />
                   </Form>
 
