@@ -14,7 +14,7 @@ export default function Layouts() {
         </header>
 
 
-        <main className="mt-10 mx-auto max-w-6xl p-10 bg-white shadow rounded-lg relative">
+        <main className="mt-10 mx-auto max-w-6xl bg-white shadow rounded-lg relative">
             {/* <Loading /> */}
             <Outlet />
         </main>
