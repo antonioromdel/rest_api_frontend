@@ -6,7 +6,7 @@ import { Product } from "../types"
 export async function loader() {
 
   const products = await getProducts()
-  return products
+  return products ? products : []
 }
 
 export async function action({request} : ActionFunctionArgs)  {
