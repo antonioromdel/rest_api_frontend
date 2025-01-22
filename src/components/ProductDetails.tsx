@@ -44,11 +44,11 @@ export default function ProductDetails({product}: ProductDetailsProps) {
               <div className="flex gap-2 items-center">
                   <button 
                     onClick={() => navigate(`producto/${product.id}/editar`)}
-                    className="bg-indigo-600 text-white rounded-lg w-full p-2 uppercase font-bold text-xs text-center"
+                    className="bg-indigo-600 flex-1 text-white rounded-lg w-full p-2 uppercase font-bold text-xs text-center"
                   >Editar</button>
 
                   <Form
-                    className="w-full"
+                    className="flex-1"
                     method="POST"
                     action={`producto/${product.id}/eliminar`}
                     onSubmit={(e) => {
@@ -59,8 +59,8 @@ export default function ProductDetails({product}: ProductDetailsProps) {
                   >
                     <input 
                       type="submit"
-                      value="Eliminar producto"
-                      className="bg-red-600 text-white rounded-lg w-full p-2 uppercase font-bold text-xs text-center hover:cursor-pointer"
+                      value="Eliminar"
+                      className="bg-red-600 text-white rounded-lg p-2 uppercase font-bold text-xs text-center hover:cursor-pointer"
                     />
                   </Form>
 
